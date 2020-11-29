@@ -42,6 +42,7 @@ mysql -uroot -proot
 ```
 
 ```sql
+use scraper_db;
 select * from scrape_data;
 ```
 
@@ -56,9 +57,10 @@ docker-compose up --detach
 ```
 
 ```sh
-mysql -uroot -proot
+docker exec -it affluent-scraper_db_1 mysql -uroot -proot
 ```
 
 ```sql
+use scraper_db;
 select * from scrape_data;
 ```
